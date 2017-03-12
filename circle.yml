@@ -29,7 +29,7 @@ dependencies:
     # Uncomment next section if you will implement SSL with nginx
     # since we don't want to give away our production ssl keys, we generate self signed test keys
     # needed only in the build ENV we will save them on the  home folder
-    # - openssl req -x509 -nodes -newkey rsa:2048 -keyout ~/ci-test.key -out ~/ci-test.com.crt -subj "/C=NL/ST=Test SSL/L=Rotterdam/O=Testing Test/OU=IT Department/CN=circle.ci.demo"
+    - openssl req -x509 -nodes -newkey rsa:2048 -keyout ~/ci-test.key -out ~/ci-test.com.crt -subj "/C=NL/ST=Test SSL/L=Rotterdam/O=Testing Test/OU=IT Department/CN=circle.ci.demo"
 
 # Test Commands
 test:
